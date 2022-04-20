@@ -14,8 +14,8 @@ class UserVideoFactory extends Factory
     public function definition()
     {
         return [
-            'video_id' => mt_rand(21,30),
-            'user_id' => mt_rand(121,150)
+            'video_id' => mt_rand(1,60),
+            'user_id' => mt_rand(1,30)
         ];
     }
 }

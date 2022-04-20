@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Video extends Model
 {
     use HasFactory;
+    protected $table='video';
     public function users(){
         return $this->belongsToMany(User::class);
     }

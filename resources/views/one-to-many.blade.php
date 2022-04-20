@@ -1,6 +1,6 @@
 @include('welcome')
 @yield('nav')
-<h1>one to one example</h1>
+<h1>one to many example</h1>
 @foreach($directors as $director)
     <h3>
         <?php echo $director['id'] ?>) Director: <?php echo $director['name']?>

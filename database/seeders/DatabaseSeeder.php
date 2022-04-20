@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
 //         \App\Models\Director::factory(20)->create();
 //         \App\Models\Film::factory(100)->create();
 //         \App\Models\User::factory(30)->create();
-//         \App\Models\Video::factory(10)->create();
-         \App\Models\UserVideo::factory(20)->create();
+//         \App\Models\Video::factory(60)->create();
+//         \App\Models\UserVideo::factory(20)->create();
 
     }
 }

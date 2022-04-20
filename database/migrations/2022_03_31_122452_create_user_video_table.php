@@ -15,8 +15,8 @@ class CreateUserVideoTable extends Migration
     {
         Schema::create('user_video', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('video_id')->constrained();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('video_id')->references('id')->on('video')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
